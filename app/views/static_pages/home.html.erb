@@ -4,7 +4,7 @@
     <div class="span4">
       <div class="image-container-outer">
         <div class=image-container-inner">
-          <%= image_tag "intro-pic", id: "intro-pic", class: "img-rounded center-block" %>
+          <%= image_tag "intro-pic.jpg", id: "intro-pic", class: "img-rounded center-block" %>
           <div class="row text-form">
             <div class="col-md-5 text">
               <h2><b><p class="photo-text">I use Workit</p></b></h2>
@@ -36,7 +36,7 @@
       <ul id="companies-list">
         <% @companies.each_with_index do |company, i| %>
           <li class="company-item">
-            <%= image_tag('companies/' + company, class: 'company-pic') %>
+            <%= image_tag('companies/' + company + ".png", class: 'company-pic') %>
           </li>
         <% end %>
       </ul>
@@ -49,7 +49,7 @@
       <div class="span4"></div>
     </div>
   </div>
-  <h2><b><p class="text-center"> We created the world's first, digital addiction care program... for our loved ones </p></b></h2>
+  <h2 id="main-text"><b><p class="text-center"> We created the world's first, digital addiction care program... for our loved ones </p></b></h2>
   <div class="container-fluid vice-container" style="background: #F4F5F6">
     <div class="row">
       <h3><p class="text-center">1 in 8 of us struggle with these.</p></h3>
@@ -61,7 +61,7 @@
         <ul id="vice-list">
           <% @vices.each_with_index do |vice, i| %>
             <li class="vice-item">
-              <%= image_tag('vices/' + vice[:image], class: 'vice-pic img-circle') %>
+              <%= image_tag('vices/' + vice[:image] + ".jpg", class: 'vice-pic img-circle') %>
               <span class='label label-success label-md vice-caption'><span style="font-size:medium">Control <strong><%= vice[:title] %></strong></span></span>
             </li>
           <% end %>
@@ -72,7 +72,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-11 col-md-offset-1">
-        <h2>How people like you are using Workit</h2>
+        <h2 id="main-text">How people like you are using Workit</h2>
         <h4 class="small-txt">*All names changed for privacy and confidentiality, of course</h4>
       </div>
     </div>
@@ -88,13 +88,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <%= image_tag "intro-pic", style: "height:400px", class: "carousel-img center-block" %>
+        <%= image_tag "intro-pic.png", style: "height:400px", class: "carousel-img center-block" %>
       </div>
       <div class="item">
-        <%= image_tag "intro-pic",  style: "height:400px", class: "carousel-img center-block" %>
+        <%= image_tag "intro-pic.png",  style: "height:400px", class: "carousel-img center-block" %>
       </div>
       <div class="item">
-        <%= image_tag "intro-pic",  style: "height:400px", class: "carousel-img center-block" %>
+        <%= image_tag "intro-pic.png",  style: "height:400px", class: "carousel-img center-block" %>
       </div>
     </div>
 
@@ -111,7 +111,7 @@
   <div class="container-fluid" style="padding-top: 80px; padding-bottom: 80px;">
     <div class="row">
       <div class="col-md-4 col-md-offset-1">
-        <h2>We have an 80% success rate and are backed by experts.</h2>
+        <h2 id="main-text">We have an 80% success rate and are backed by experts.</h2>
       </div>
     </div>
     <div class="row">
@@ -127,10 +127,10 @@
         <button type="button" class="btn btn-primary"><b>Learn More</b></button>
       </div>
     </div>
-    <div class="row text-center"><h2>Which Workit program is right for you?</h2></div>
+    <div class="row text-center"><h2 id="main-text">Which Workit program is right for you?</h2></div>
     <div class="row text-center">
-      <%= image_tag "single", id: "program-pic" %>
-      <%= image_tag "family", id: "program-pic" %>
+      <%= image_tag "single.png", id: "program-pic" %>
+      <%= image_tag "family.png", id: "program-pic" %>
     </div>
     <div class="row text-center">
       <button type="button" id="program-btn" class="btn btn-primary outline outline-lg"><b>Get Support Today</b></button>
