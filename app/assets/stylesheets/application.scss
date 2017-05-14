@@ -1,0 +1,261 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar.navbar-light {
+  margin-bottom: 0;
+}
+
+.navbar .navbar-brand {
+  margin-top: -3px;
+  margin-left: 18px !important;
+  height: 58px;
+}
+
+.nav .dropdown.open .caret {
+  border-top: none;
+  border-bottom: 4px solid #000000;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  background: none;
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #00c088;
+  color: #ffffff;
+}
+
+.btn-primary:active, .btn-primary.active {
+  box-shadow: none;
+}
+
+.btn.outline {
+  margin: 8px 8px;
+  background: none;
+  padding: 4px 22px;
+}
+
+.btn.outline {
+  margin: 8px 8px;
+  background: none;
+  padding: 4px 22px;
+}
+
+.btn-primary.outline {
+  border: 2px solid #00c088;
+  color: #00c088;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus {
+  color: #00e684;
+  border-color: #00e684;
+}
+.btn-primary.outline.active, .btn-primary.outline.active {
+  color: #00b380;
+  border-color: #00b380;
+  box-shadow: none;
+}
+
+.btn-primary.outline:active, .btn-primary.outline.active {
+  border-color: #00c088; 
+  color: #00c088;
+  box-shadow: none;
+}
+
+#main-text {
+  color: #333333;
+}
+
+#program-btn {
+  padding: 15px 25px;
+}
+
+.row.intro-img {
+  margin-bottom: 50px;
+}
+
+#menu-words {
+  font-size: small;
+  color: #8F8F8F;
+}
+
+#intro-pic {
+  height: 540px;
+  margin-bottom: -10px;
+  box-shadow: 10px 10px 10px #B3B3B3;
+}
+
+#dancing-man {
+  height: 150px;
+  margin-bottom: -10px;
+}
+
+p.photo-text {
+  color: white;
+}
+
+.image-container-outer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+.text-form {
+  .form {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    .form-control {
+      background-color: #efefef;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 32.5%;
+    left: 35%;
+  }
+}
+
+.text-form2 {
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .form-control {
+      background-color: #efefef;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 47.5%;
+    left: 37%;
+  }
+}
+
+.button-row {
+  .btn {
+    height: 40px;
+    border: none;
+  }
+  .button1 {
+    position: absolute;
+    top: 63%;
+    left: 52%;
+  }
+  .button2 {
+    position: absolute;
+    background-color: #E6E9E9;
+    top: 63%;
+    left: 63%;
+    color: #9AA1A8;
+  }
+}
+
+.company-list {
+  list-style: none;
+  padding: 0;
+}
+
+.company-item {
+  display: inline-block;
+  padding: 0;
+}
+
+.company-pic {
+  height: 100px;
+}
+
+.vice-container {
+  padding-bottom: 50px;
+}
+
+.vice {
+  text-align: center;
+}
+
+.vice-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vice-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vice-pic {
+  display: block;
+  height: 170px;
+  margin: 30px 50px;
+}
+
+.vice-caption {
+  background-color: #30BA8E;
+  border-radius: 0;
+}
+
+.label-md {
+  font-size: 20px;
+}
+
+.small-txt {
+  font-size: medium;
+  margin-top: -3px;
+  margin-left: 2px;
+  color: #8C939C;
+}
+
+#companies {
+  margin-top: -35px
+}
+
+#grey-grad {
+  background: #F4F4F4;
+  background: -webkit-linear-gradient(#F4F4F4, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F4F4F4, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F4F4F4, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F4F4F4, white); /* Standard syntax (must be last) */
+}
+
+#program-pic {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom:25px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-justify-sm {
+        text-align: justify;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-justify-md {
+        text-align: justify;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-justify-lg {
+        text-align: justify;
+    }
+}

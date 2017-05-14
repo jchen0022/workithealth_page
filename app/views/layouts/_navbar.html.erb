@@ -1,0 +1,42 @@
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-header">
+      <%= link_to image_tag("logo-green-text.png", class: 'navbar-brand'), {}, {class: 'navbar-left'} %>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              <span id="menu-words">I'm struggling with <span class="caret"></span></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Struggles</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              <span id="menu-words">About <span class="caret"></span></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">about</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span id="menu-words">Blog</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span id="menu-words">Sign in</span></a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary outline"><b>Try it Now for Free</b></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
