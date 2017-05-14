@@ -35,6 +35,10 @@
   outline: 0 none;
 }
 
+.btn-squared {
+  border-radius: 0;
+}
+
 .btn.outline {
   margin: 8px 8px;
   background: none;
@@ -129,8 +133,8 @@
   box-shadow: 10px 10px 10px #B3B3B3;
 }
 
-#dancing-man {
-  height: 150px;
+#sad-heart {
+  height: 110px;
   margin-bottom: -10px;
 }
 
@@ -139,40 +143,34 @@ p.photo-text {
 }
 
 .image-container-outer {
+  margin-bottom: 50px;
+  background: url('intro-pic.jpg') no-repeat center center;
+  background-size: cover;
+  height: 500px;
   position: relative;
-  overflow: hidden;
-  padding-bottom: 25px;
+  -webkit-filter: drop-shadow( 1px 1px 0px 1px #888888 );
+  filter: drop-shadow( 1px 1px 0px 1px #888888 );
 }
 
 .text-form {
-  .form {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    .form-control {
-      background-color: #efefef;
-    }
+  &.text {
+    margin-left: 100px;
+    margin-top: 2px;
   }
-  .text {
-    position: absolute;
-    top: 32.5%;
-    left: 35%;
+  &.form {
+    border-radius: 0;
+    width: 400px;
   }
 }
 
 .text-form2 {
-  .form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    .form-control {
-      background-color: #efefef;
-    }
+  &.text {
+    margin-left: 120px;
+    margin-top: 2px;
   }
-  .text {
-    position: absolute;
-    top: 47.5%;
-    left: 37%;
+  &.form {
+    border-radius: 0;
+    width: 400px;
   }
 }
 

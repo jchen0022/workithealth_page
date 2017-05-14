@@ -1,34 +1,29 @@
 <div class="container-fluid">
   <div class="row intro-img">
-    <div class="span4"></div>
-    <div class="span4">
-      <div class="image-container-outer">
-        <div class=image-container-inner">
-          <%= image_tag "intro-pic.jpg", id: "intro-pic", class: "img-rounded center-block" %>
-          <div class="row text-form">
-            <div class="col-md-5 text">
-              <h2><b><p class="photo-text">I use Workit</p></b></h2>
-            </div>
-            <div class="col-md-3 form">
-              <input type="text" class="form-control input-lg">
-            </div>
-          </div>
-          <div class="row text-form2">
-            <div class="col-md-5 text">
-              <h2><b><p class="photo-text">...because</p></b></h2>
-            </div>
-            <div class="col-md-3 form">
-              <input type="text" class="form-control input-lg">
-            </div>
-          </div>
-          <div class="row button-row">
-            <button type="button" class="btn btn-primary button1 main main-green"><b>Try it Free Today</b></button>
-            <button type="button" class="btn btn-primary button2 main main-gray"><b>Learn More</b></button>
-          </div>
+    <div id="intro-pic" class="container-fluid image-container-outer">
+      <div class="row" style="margin-top: 140px;">
+        <div class="col-md-offset-3 col-md-3 ">
+          <h1 class="text-form text"><b><p style="color: white;">I use Workit</p></b></h1>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control input-lg text-form form">
+        </div>
+      </div>
+      <div class="row" style="margin-top:50px;">
+        <div class="col-md-offset-3 col-md-3 ">
+          <h1 class="text-form2 text"><b><p style="color: white;">...because</p></b></h1>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control input-lg text-form2 form">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-offset-6 col-md-6 ">
+          <button type="button" class="btn btn-primary main main-green main-lg btn-squared" style="margin-right: 10px"><b>Try it Free Today</b></button>
+          <button type="button" class="btn btn-primary main main-gray main-lg btn-squared"><b>Learn More</b></button>
         </div>
       </div>
     </div>
-    <div class="span4"></div>
   </div>
   <div class="container-fluid">
     <div class="row text-center" style="margin-top: -30px">
@@ -44,7 +39,7 @@
     <div class="row">
       <div class="span4"></div>
       <div class="span4"></div>
-        <%= image_tag "DancingHeartMan.png", id: "dancing-man", class: "center-block" %>
+        <%= image_tag "sad_heart.png", id: "sad-heart", class: "center-block" %>
       </div>
       <div class="span4"></div>
     </div>
@@ -123,8 +118,8 @@
   <div class="container-fluid" id="grey-grad">
     <div class="row">
       <div class="col-md-11 col-md-offset-1">
-        <button type="button" style="margin-right: 5px;" class="btn btn-primary main main-green main-lg"><b>Try it Free Today</b></button>
-        <button type="button" style="margin-left: 5px;" class="btn btn-primary main main-gray btn main-lg"><b>Learn More</b></button>
+        <button type="button" style="margin-right: 5px;" class="btn btn-primary main main-green main-lg btn-squared"><b>Try it Free Today</b></button>
+        <button type="button" style="margin-left: 5px;" class="btn btn-primary main main-gray btn main-lg btn-squared"><b>Learn More</b></button>
       </div>
     </div>
     <div class="row text-center"><h2 id="main-text">Which Workit program is right for you?</h2></div>
