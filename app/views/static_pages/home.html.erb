@@ -61,7 +61,7 @@
         <ul id="vice-list">
           <% @vices.each_with_index do |vice, i| %>
             <li class="vice-item">
-              <%= image_tag('vices/' + vice[:image] + ".jpg", class: 'vice-pic img-circle') %>
+              <%= image_tag('vices/' + vice[:image], class: 'vice-pic img-circle') %>
               <span class='label label-success label-md vice-caption'><span style="font-size:medium">Control <strong><%= vice[:title] %></strong></span></span>
             </li>
           <% end %>
