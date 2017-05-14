@@ -30,18 +30,9 @@
   border-bottom: 4px solid #000000;
 }
 
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
-  background: none;
   outline: 0 none;
-}
-
-.btn-primary {
-  background: #00c088;
-  color: #ffffff;
-}
-
-.btn-primary:active, .btn-primary.active {
-  box-shadow: none;
 }
 
 .btn.outline {
@@ -61,7 +52,45 @@
   color: #00c088;
 }
 
+.btn-primary.main {
+  &.main-green {
+    background: #00c088;
+    border: none;
+  }
+  &.main-gray {
+    background-color: #E6E9E9;
+    color: #9AA1A8;
+    border: none;
+  }
+  &.main-lg {
+    padding: 13px 20px;
+    font-size: 16px;
+    border-radius: 0;
+  }
+}
+
+.btn-primary.main:hover, .btn-primary.main:focus {
+  &.main-green {
+    background: #00c98d;
+  }
+  &.main-gray {
+    background: #eff2f2;
+  }
+}
+
+.btn-primary.main:active, .btn-primary.main.active {
+  &.main-green {
+    background: #00b380;
+    box-shadow: none;
+  }
+  &.main-gray {
+    background: #dee0e0;
+    box-shadow: none;
+  }
+}
+
 .btn-primary.outline:hover, .btn-primary.outline:focus {
+  background: none;
   color: #00e684;
   border-color: #00e684;
 }
@@ -159,10 +188,8 @@ p.photo-text {
   }
   .button2 {
     position: absolute;
-    background-color: #E6E9E9;
     top: 63%;
     left: 63%;
-    color: #9AA1A8;
   }
 }
 
@@ -225,6 +252,7 @@ p.photo-text {
 }
 
 #grey-grad {
+  padding-top: 30px;
   background: #F4F4F4;
   background: -webkit-linear-gradient(#F4F4F4, white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#F4F4F4, white); /* For Opera 11.1 to 12.0 */
