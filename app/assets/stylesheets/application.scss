@@ -264,6 +264,11 @@ p.photo-text {
   margin-bottom:25px;
 }
 
+#devices {
+  display: inline-block;
+  height: 470px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .text-justify-sm {
