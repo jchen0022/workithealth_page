@@ -28,14 +28,14 @@
   <div class="container-fluid">
     <div class="row text-center" style="margin-top: -30px">
       <% @companies = get_companies %>
-      <ul id="companies-list">
+      <ul class="companies-list">
         <% @companies.each_with_index do |company, i| %>
           <li class="company-item">
             <%= image_tag('companies/' + company + ".png", class: 'company-pic') %>
           </li>
         <% end %>
       </ul>
-      </div>
+    </div>
     <div class="row">
       <div class="span4"></div>
       <div class="span4"></div>
@@ -116,16 +116,31 @@
     </div>
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
-        <h4 class="small-txt">We built Workit to be the addiction care program for the 21st century</h4>
+        idlass="small-txt">We built Workit to be the addiction care program for the 21st century</h4>
       </div>
     </div>
   </div>
   <div class="container-fluid" id="grey-grad">
     <div class="row">
-      <div class="col-md-11 col-md-offset-1">
+      <div class="col-md-10 col-md-offset-2">
         <button type="button" style="margin-right: 5px;" class="btn btn-primary main main-green main-lg btn-squared"><b>Try it Free Today</b></button>
         <button type="button" style="margin-left: 5px;" class="btn btn-primary main main-gray btn main-lg btn-squared"><b>Learn More</b></button>
       </div>
+    </div>
+    <div class="row" style="margin-top: 3cm; margin-bottom: 4px;">
+      <div class="col-md-4 col-md-offset-7 text-right">
+        <a href="#" id="board-link">See Our Entire Clinical Advisory Board</a>
+      </div>
+    </div>
+    <div class="row text-center">
+      <% @board = get_clinical_board %>
+      <ul class="board-list">
+        <% @board.each_with_index do |member, i| %>
+          <li class="board-item">
+            <%= image_tag('clinical_board/' + member, class: 'board-member-pic') %>
+          </li>
+        <% end %>
+      </ul>
     </div>
     <div class="row text-center"><h2 id="main-text">Which Workit program is right for you?</h2></div>
     <div class="row text-center">

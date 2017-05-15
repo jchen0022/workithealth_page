@@ -190,7 +190,7 @@ p.photo-text {
   }
 }
 
-.company-list {
+.companies-list {
   list-style: none;
   padding: 0;
 }
@@ -202,6 +202,29 @@ p.photo-text {
 
 .company-pic {
   height: 100px;
+}
+
+.board-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.25cm;
+}
+
+.board-item {
+  display: inline-block;
+  margin: 0px 6px;
+  padding: 0;
+}
+
+.board-member-pic {
+  height: 111.15px;
+  width: 112.1px;
+}
+
+#board-link {
+  margin-right: 45px;
+  color: #464646;
+  text-decoration: underline;
 }
 
 .vice-container {

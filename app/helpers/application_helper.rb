@@ -50,4 +50,11 @@ module ApplicationHelper
     companies = ["cbs", "cedars", "crains", "fortune", "huffington", "michigan", "mobihealth", "newmexico"]
     return companies
   end
+  def get_clinical_board
+    board = []
+    (1..8).each do |i|
+      board.push("cb" + i.to_s + ".png")
+    end
+    return board
+  end
 end
