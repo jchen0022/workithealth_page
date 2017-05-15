@@ -15,6 +15,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$workit-green: #00c088;
+
 .navbar.navbar-light {
   margin-bottom: 0;
 }
@@ -28,6 +30,12 @@
 .nav .dropdown.open .caret {
   border-top: none;
   border-bottom: 4px solid #000000;
+}
+
+.navbar-toggle {
+  .icon-bar {
+    background-color: $workit-green !important;
+  }
 }
 
 
@@ -50,15 +58,15 @@
 }
 
 .btn-primary.outline {
-  border: 2px solid #00c088;
-  color: #00c088;
+  border: 2px solid $workit-green;
+  color: $workit-green;
 }
 
 .btn-primary.btn-start {
   border-radius: 25px;
   padding: 13px 30px;
   font-size: 20px;
-  background: #00c088;
+  background: $workit-green;
   border: none;
   box-shadow: 2px 2px 5px #888888
 }
@@ -82,7 +90,7 @@
 
 .btn-primary.main {
   &.main-green {
-    background: #00c088;
+    background: $workit-green;
     border: none;
   }
   &.main-gray {
@@ -128,8 +136,8 @@
 }
 
 .btn-primary.outline:active, .btn-primary.outline.active {
-  border-color: #00c088; 
-  color: #00c088;
+  border-color: $workit-green; 
+  color: $workit-green;
   box-shadow: none;
 }
 
