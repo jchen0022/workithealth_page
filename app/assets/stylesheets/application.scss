@@ -189,7 +189,7 @@ p.photo-text {
   color: white;
 }
 
-.image-container-outer {
+.image-container {
   margin-bottom: 50px;
   background: image-url('intro-pic.jpg') no-repeat center center;
   background-attachment: fixed;
@@ -421,6 +421,25 @@ p.photo-text {
   text-align: right;
   top: 105%;
   left: 71.3%;
+}
+
+/* iPhone 6 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and(-webkit-min-device-pixel-ratio: 2) {
+    .container-large {
+      width: 300px;
+    }
+    .mobile-center {
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  .center-small {
+    text-align: center;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
