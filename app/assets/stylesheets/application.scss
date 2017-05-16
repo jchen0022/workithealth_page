@@ -357,7 +357,6 @@ p.photo-text {
   }
 }
 
-
 #founder-pic {
   position: absolute;
   top: -10%;
@@ -414,6 +413,14 @@ p.photo-text {
 #founder-link {
   text-decoration: underline;
   color: $workit-green;
+}
+
+#team-link {
+  font-size: 15px;
+  position: absolute;
+  text-align: right;
+  top: 135%;
+  left: 30%;
 }
 
 /* Small devices (tablets, 768px and up) */
