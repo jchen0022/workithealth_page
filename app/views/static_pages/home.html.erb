@@ -51,9 +51,9 @@
     <%= image_tag "phones.png", id: "devices" %>
   </div>
   <div class="container-fluid vice-container" style="background: #F4F5F6">
-    <div class="row">
-      <h2><p class="text-center">1 in 8 of us struggle with these.</p></h2>
-      <h2><b><p class="text-center" style="margin-top:-12px">We can help.</p></b></h2>
+    <div class="row" style="margin-top: 29px;">
+      <p class="text-center header-text">1 in 8 of us struggle with these.</p>
+      <h2><b><p class="text-center" style="margin-top:-12px; letter-spacing: 0.5px;">We can help.</p></b></h2>
     </div>
     <div class="row vice">
       <div class="col-md-12">
@@ -62,7 +62,7 @@
           <% @vices.each_with_index do |vice, i| %>
             <li class="vice-item">
               <%= image_tag('vices/' + vice[:image], class: 'vice-pic img-circle') %>
-              <span class='label label-success label-md vice-caption'><span style="font-size:medium">Control <strong><%= vice[:title] %></strong></span></span>
+              <span class='label label-success label-md vice-caption'><span class="vice-text">Control <strong><%= vice[:title] %></strong></span></span>
             </li>
           <% end %>
         </ul>
@@ -111,7 +111,7 @@
   <div class="container-fluid" style="padding-top: 80px; padding-bottom: 80px;">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
-        <h2 class="main-text">We have an 80% success rate and are backed by experts.</h2>
+        <h2 class="main-text" style="line-height: 120%">We have an 80% success rate and are backed by experts.</h2>
       </div>
     </div>
     <div class="row">

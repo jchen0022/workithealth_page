@@ -296,13 +296,20 @@ p.photo-text {
 
 .vice-pic {
   display: block;
-  height: 170px;
+  height: 180px;
   margin: 30px 50px;
 }
 
 .vice-caption {
   background-color: #30BA8E;
   border-radius: 0;
+  padding: 8px 10px;
+}
+
+.vice-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .label-md {
@@ -320,6 +327,12 @@ p.photo-text {
 .main-text {
   font-size: 35px;
   color: #333333;
+}
+
+.header-text {
+  letter-spacing: 1px;
+  font-size: 33px;
+  font-weight: 0;
 }
 
 
