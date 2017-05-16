@@ -202,7 +202,7 @@ p.photo-text {
 
 .text-form {
   &.text {
-    margin-left: 100px;
+    text-align: right;
     margin-top: 2px;
   }
   &.form {
@@ -213,7 +213,8 @@ p.photo-text {
 
 .text-form2 {
   &.text {
-    margin-left: 120px;
+    text-align: right;
+    margin-left: 0px;
     margin-top: 2px;
   }
   &.form {
@@ -423,6 +424,19 @@ p.photo-text {
   left: 71.3%;
 }
 
+@media only screen and (max-width: 991px) {
+  .text-form.text {
+    text-align: center;
+  }
+  .text-form2.text {
+    text-align: center;
+  }
+  #intro-buttons {
+    text-align: center;
+  }
+}
+
+
 /* iPhone 6 */
 @media only screen
   and (min-device-width: 375px)
@@ -436,10 +450,10 @@ p.photo-text {
     }
 }
 
-@media only screen and (max-width: 991px) {
-  .center-small {
-    text-align: center;
-  }
+@media only screen and (max-width: 667) {
+    .background-small {
+      background-attachment: initial;
+    }
 }
 
 /* Small devices (tablets, 768px and up) */
