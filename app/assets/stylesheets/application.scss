@@ -14,6 +14,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "slick";
+@import "slick-theme";
 
 $workit-green: #00c088;
 
@@ -357,6 +359,34 @@ p.photo-text {
     text-align: left;
   }
 }
+
+.slider-div {
+  background-color: #F4F5F6;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  padding-top: 36px;
+  padding-bottom: 10px;
+}
+
+.main-slider {
+  width: 85%;
+
+  .slick-slide {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .slider-pic {
+    width: 100%;
+    box-shadow: 5px 5px 5px #888888;
+  }
+}
+
+.slick-prev:before , .slick-next:before {
+  color: black;
+}
+
 
 #founder-pic {
   position: absolute;
