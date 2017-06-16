@@ -1,3 +1,4 @@
+// Settings for slick slider used on main page
 $(document).on('ready', function() {
     $(".main-slider").slick({
         autoplay: true,
